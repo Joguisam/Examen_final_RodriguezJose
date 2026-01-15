@@ -1,13 +1,16 @@
-def agregar_ destino():
-print ("\n--- Agregar Destino ---")
-destino = ("Introduce el destino: ")
-descripcion = ("Introduce una breve descripción: ")
-recomendacion = ("Introduce una recomendacion: ")
+from json_handler import guardar_datos,diario_destino
 
-nuevo_destino = {"Destino": destino, "Descripción": descripcion, "Recomendacion": recomendacion}
-diario_destino.append(nuevo_destino)
 
-print(f"Destino '{destino}, {descripcion}' agregado.")
+def agregar_destino():
+    print("\n--- Agregar Destino ---")
+    destino = ("Introduce el destino: ")
+    descripcion = ("Introduce una breve descripción: ")
+    recomendacion = ("Introduce una recomendacion: ")
+
+    nuevo_destino = {"Destino": destino, "Descripción": descripcion, "Recomendacion": recomendacion}
+    diario_destino.append(nuevo_destino)
+
+    print(f"Destino '{destino}, {descripcion}' agregado.")
 
 def historial():
     print("\n--- Historial de viajes ---")
